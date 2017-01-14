@@ -7,11 +7,11 @@ A common problem for greek web designers who want to use the CSS `text-transform
 ```text
 ά => Ά
 ϊ => Ϊ
-ΐ => ΅Ι
+ΐ => ΅Ι (OK, not actually a letter after all)
 ...
 ```
 
-This script takes an HTML element, which is meant to be used with a `text-transform: uppercase;` and carefully replaes its accented lowercase vowels with their non-accented uppercase equivalents.
+This script takes an HTML element, which is meant to be used with a `text-transform: uppercase;` and carefully replaces its accented lowercase vowels with their non-accented uppercase equivalents.
 
 ```text
 ά => Α
@@ -20,11 +20,23 @@ This script takes an HTML element, which is meant to be used with a `text-transf
 ...
 ```
 
-It works carefully on the HTML elements it receives, so that it separates the possible HTML elements that they may contain from the actual text it is suuposed to transform.
+It works carefully on the HTML elements it receives, so that it separates the possible HTML elements that they may contain from the actual text it is supposed to transform.
+
+## Usage
+
+You can call the plugin like this:
+
+```javascript
+$(function () {
+
+    $( '.selector' ).greekUppercase();
+    
+});
+```
 
 ## Greek diacritics
 
-You can read more on [modern Greek diacritics here](https://en.wikipedia.org/wiki/Greek_diacritics).
+You can read more on [modern Greek diacritics](https://en.wikipedia.org/wiki/Greek_diacritics) here.
 
 ## License
 
