@@ -20,6 +20,8 @@ This script takes an HTML element, which is meant to be used with a `text-transf
 ...
 ```
 
+It works carefully on the HTML elements it receives, so that it separates the possible HTML elements that they may contain from the actual text it is suuposed to transform.
+
 ## Greek diacritics
 
 You can read more on [modern Greek diacritics here](https://en.wikipedia.org/wiki/Greek_diacritics).
