@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+
+    <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+
+    <title>Nevma jQuery uppercase greek letters plugin</title>
+
+    <style type = "text/css">
+        body {
+            background: lightgray;
+        }
+
+        .wrapper {
+            width: 80%;
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 1rem 2rem 3rem 2rem;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background: white;
+        }
+
+        p, .greek-uppercase {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <script type = "text/javascript" src = "../js/jquery-2.2.2.min.js"></script>
+    <script type = "text/javascript" src = "../js/jquery.nevma.greekUppercase-1.0.js"></script>
+    <!-- 
+        <script type = "text/javascript" src = "../js/jquery.nevma.greekUppercase-1.0.min.js"></script>
+     -->
+
+    <script type = "text/javascript">
+        $(function () {
+            
+            $('p').greekUppercase();
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class = "wrapper">
+
+        <h1>Uppercase Greek Characters</h1>
+
+        <h2>Lowercase letters</h2>
+        <p>ά έ ή ί ϊ ΐ 'ι' ό ύ ϋ ΰ 'υ' ώ ς</p>
+        
+        <h2>Uppercase letters</h2>
+        <p>Ά Έ Ή Ί Ϊ ΅Ι 'Ι' Ό Ύ Ϋ ΅Υ 'Υ' Ώ</p>
+        
+        <h2>Element with children</h2>
+        <p>
+            <em>αλλά</em>
+            όλα
+            <em>άλλα</em>
+        </p>
+        
+        <h2>Element with deep children</h2>
+        <p>
+            <em>αλλά</em>
+            όλα
+            <em>άλλα</em>
+            έλα
+            <span>
+                αλλού
+                <em>αλί</em>
+                άλλος
+                <strong>
+                    ύλη
+                    <em>ύλη</em>
+                </strong>
+                ίλη
+            </span>
+            ιλύς
+        </p>
+        
+        <h2>Element with deep children and default selector</h2>
+        <div class = "greek-uppercase">
+            <em>αλλά</em>
+            όλα
+            <em>άλλα</em>
+            έλα
+            <span>
+                αλλού
+                <em>αλί</em>
+                άλλος
+                <strong>
+                    ύλη
+                    <em>ύλη</em>
+                </strong>
+                ίλη
+            </span>
+            ιλύς
+        </div>
+
+    </div>
+
+</body>
+
+</html>

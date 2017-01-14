@@ -1,0 +1,20 @@
+{
+
+    "name"    : "Nevma",
+    "version" : "1.0.0",
+    "private" : true,
+
+    "dependencies": {
+        "jshint"  : "latest"
+    },
+    
+    "scripts" : { 
+        "forrest" : "echo My name is Gump, Forrest Gump.",
+
+        "jshint"  : "jshint js/jquery.nevma.greekUppercase-1.0.js",
+        "minify"  : "uglifyjs js/jquery.nevma.greekUppercase-1.0.js --comments -m -o js/jquery.nevma.greekUppercase-1.0.min.js",
+
+        "build"   : "npm run jshint && npm run minify"
+    }
+
+}
